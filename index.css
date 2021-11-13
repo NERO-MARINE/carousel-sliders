@@ -1,0 +1,66 @@
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+.carousel{
+    border: 2px solid #ccc;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+}
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.control .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.control .arrow i{
+    font-size: 40px;
+}
+
+.control ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+
+}
+.control ul li{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    background: #333;
+    cursor: pointer;
+}
+
+.control ul li.selected{
+    background: transparent;
+}
+
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+    right: 10px;
+}
